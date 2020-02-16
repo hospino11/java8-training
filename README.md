@@ -14,3 +14,5 @@ Java 8 training Udemy course. The course can be followed here https://www.udemy.
 - BinaryOperator
 - Supplier
 - Method Reference (static and class reference)
+- Local variables
+- Class level variables
