@@ -10,3 +10,5 @@ Java 8 training Udemy course. The course can be followed here https://www.udemy.
 - BiPredicate
 - Function
 - BiFunction
+- Unary operator
+- Binary operator
