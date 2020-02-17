@@ -1,6 +1,10 @@
 package com.java8.features.stream;
 
+import com.java8.features.repo.Person;
+import com.java8.features.repo.PersonRepository;
+
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -15,5 +19,20 @@ public class StreamFlatMapExample {
 
         List<Integer> numbersList = listOfNumbersList.stream().flatMap(List::stream).collect(Collectors.toList());
         System.out.println("After flatten: " + numbersList);
+
+        List<String> hobbies = PersonRepository.getAllPeople().stream()
+                .map(Person::getHobbies)
+                .flatMap(List::stream)
+                .sorted(Comparator.reverseOrder())
+                .distinct()
+                .collect(Collectors.toList());
+        System.out.println("List of uniques hobbies: " + hobbies);
+
+        long amountOfHobbies = PersonRepository.getAllPeople().stream()
+                .map(Person::getHobbies)
+                .flatMap(List::stream)
+                .distinct()
+                .count();
+        System.out.println("Total of hobbies are: " + amountOfHobbies);
     }
 }
