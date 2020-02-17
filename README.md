@@ -19,3 +19,7 @@ Java 8 training Udemy course. The course can be followed here https://www.udemy.
 - Stream API
     - Collectors.toMap
     - Filter
+    - Collectors.toList
+    - Collectors.toSet
+    - flatMap
+    - Collectors.collectingAndThen
