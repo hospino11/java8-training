@@ -26,3 +26,6 @@ Java 8 training Udemy course. The course can be followed here https://www.udemy.
     - peek
     - forEach
     - map
+    - distinct
+    - sorted
+    - count
