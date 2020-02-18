@@ -15,6 +15,7 @@ public class PersonRepository {
         people.add(new Person("Nancy", 130, 4900, "Female", 2, Arrays.asList("Cricket", "Swimming", "Tennis")));
         people.add(new Person("Harper", 125, 9000, "Female", 2, Arrays.asList("Football", "Swimming", "Tennis")));
         people.add(new Person("Alan", 110, 9500, "Male", 2, Arrays.asList("Cricket", "Swimming", "Tennis")));
+        people.add(new Person("Campbell", 165, 1548, "Male", 2, Arrays.asList("Swimming", "Tennis")));
 
         return people;
     }
