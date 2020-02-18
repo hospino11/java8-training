@@ -4,6 +4,8 @@ import com.java8.features.repo.Person;
 import com.java8.features.repo.PersonRepository;
 
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class StreamFindAnyFirstExample {
 
