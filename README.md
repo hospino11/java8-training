@@ -49,3 +49,7 @@ Java 8 training Udemy course. The course can be followed here https://www.udemy.
         - IntStream
         - LongStream
         - DoubleStream
+        - average
+        - sum
+        - max
+        - min
