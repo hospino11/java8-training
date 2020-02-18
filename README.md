@@ -36,3 +36,5 @@ Java 8 training Udemy course. The course can be followed here https://www.udemy.
     - max
     - Collectors.minBy
     - Collectors.maxBy
+    - limit
+    - skip
