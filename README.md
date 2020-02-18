@@ -32,3 +32,7 @@ Java 8 training Udemy course. The course can be followed here https://www.udemy.
     - count
     - sum
     - reduce
+    - min
+    - max
+    - Collectors.minBy
+    - Collectors.maxBy
