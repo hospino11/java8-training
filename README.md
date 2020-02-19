@@ -60,3 +60,5 @@ Java 8 training Udemy course. The course can be followed here https://www.udemy.
         - mapToLong
         - mapToObj
     - Collectors.joining
+    - Collectors.mapping
+    - Collectors.counting
