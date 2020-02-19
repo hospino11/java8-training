@@ -64,3 +64,4 @@ Java 8 training Udemy course. The course can be followed here https://www.udemy.
     - Collectors.counting
     - Collectors.summingInt
     - Collectors.averagingInt
+    - Collectors.groupingBy
