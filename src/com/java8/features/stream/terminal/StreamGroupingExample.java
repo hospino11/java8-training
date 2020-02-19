@@ -34,5 +34,13 @@ public class StreamGroupingExample {
                     return classification;
                 }))
                 .forEach((key, value) -> System.out.println(key + " are: " + value));
+
+        // Second level grouping
+        PersonRepository.getAllPeople().stream()
+                .collect(Collectors.groupingBy(Person::getGender, Collectors.groupingBy(person -> person.getHeight() >= 140 ? "Tallest" : "Smaller")))
+                .forEach((key, value) -> value.forEach((heightKey, people) -> System.out.println("Gender: " + key + " - " + heightKey + ": " + people)));
+        PersonRepository.getAllPeople().stream()
+                .collect(Collectors.groupingBy(Person::getGender, Collectors.summingInt(Person::getKids)))
+                .forEach((gender, kidsAmount) -> System.out.println("For " + gender + " there are " + kidsAmount + " kids."));
     }
 }
