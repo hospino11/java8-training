@@ -59,3 +59,4 @@ Java 8 training Udemy course. The course can be followed here https://www.udemy.
         - mapToDouble
         - mapToLong
         - mapToObj
+    - Collectors.joining
