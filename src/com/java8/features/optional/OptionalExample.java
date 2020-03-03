@@ -8,7 +8,7 @@ public class OptionalExample {
         System.out.println("Result of Optional.ofNullable is: " + Optional.ofNullable("Java"));
         Optional<String> name = Optional.ofNullable(null);
         /*
-        Optional.get can throw java.util.NoSuchElementException if there is no element.
+        Optional.ofNullable(null).get can throw java.util.NoSuchElementException if there is no element.
          */
         System.out.println("Name is: " + name.orElse("No Data Found"));
         name = Optional.ofNullable("Java test");
