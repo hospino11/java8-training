@@ -71,3 +71,7 @@ Java 8 training Udemy course. The course can be followed here https://www.udemy.
 - Optional
     - ofNullable
     - orElse
+    - of
+    - empty
+    - isPresent
+    - map

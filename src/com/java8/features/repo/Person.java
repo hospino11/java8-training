@@ -12,6 +12,10 @@ public class Person {
     private int kids;
     List<String> hobbies = new ArrayList<>();
 
+    public Person() {
+        super();
+    }
+
     public Person(String name, int height, double salary, String gender, int kids, List<String> hobbies) {
         this.name = name;
         this.height = height;

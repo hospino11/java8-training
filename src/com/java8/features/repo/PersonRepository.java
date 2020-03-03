@@ -3,6 +3,7 @@ package com.java8.features.repo;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 public class PersonRepository {
 
@@ -18,5 +19,9 @@ public class PersonRepository {
         people.add(new Person("Campbell", 165, 1548, "Male", 2, Arrays.asList("Swimming", "Tennis")));
 
         return people;
+    }
+
+    public static Optional<Person> getPersonOptional() {
+        return Optional.of(getAllPeople().get(0));
     }
 }
