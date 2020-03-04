@@ -24,7 +24,7 @@ public class DefaultCustomSortExample {
         System.out.println("People sorted by name and height is: ");
         peopleList.forEach(System.out::println);
         peopleList = PersonRepository.getAllPeople();
-        peopleList.set(5, null);
+        peopleList.add(5, null);
         peopleList.sort(Comparator.nullsFirst(personByNameComparator.thenComparing(personByHeightComparator)));
         System.out.println("People sorted by name and height with nullFirst is: ");
         peopleList.forEach(System.out::println);

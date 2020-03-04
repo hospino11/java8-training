@@ -89,3 +89,5 @@ Java 8 training Udemy course. The course can be followed here https://www.udemy.
     - thenComparing
     - nullsFirst
     - nullsLast
+- Default interface method
+- Static interface method
