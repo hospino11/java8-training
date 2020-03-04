@@ -11,6 +11,7 @@ public class Person {
     private String gender;
     private int kids;
     List<String> hobbies = new ArrayList<>();
+    private Address address;
 
     public Person() {
         super();
@@ -73,6 +74,14 @@ public class Person {
         this.hobbies = hobbies;
     }
 
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
@@ -82,6 +91,7 @@ public class Person {
                 ", gender='" + gender + '\'' +
                 ", kids=" + kids +
                 ", hobbies=" + hobbies +
+                ", address=" + address +
                 '}';
     }
 }

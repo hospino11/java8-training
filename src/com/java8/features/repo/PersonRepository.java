@@ -22,6 +22,8 @@ public class PersonRepository {
     }
 
     public static Optional<Person> getPersonOptional() {
-        return Optional.of(getAllPeople().get(0));
+        Person person = getAllPeople().get(0);
+        person.setAddress(new Address("7th block", "Ashburn", "Virginia", "USA", 20047));
+        return Optional.of(person);
     }
 }
